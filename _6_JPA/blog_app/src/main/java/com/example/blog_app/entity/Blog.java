@@ -19,6 +19,8 @@ public class Blog {
 
     @NotBlank(message = "Không được để trống!")
     private String name;
+
+    @Ok
     private String content;
 
 

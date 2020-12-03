@@ -16,6 +16,8 @@
 
     <label>Blog content:</label>
 <textarea name="contentBlog" style="width: 200px;height: 100px" th:field="*{content}"></textarea><br>
+    <p style="color: red" th:if="${#fields.hasErrors('content')}" th:errors="*{content}"></p>
+
     <input type="submit" value="Save">
 </form>
 </body>

@@ -22,12 +22,6 @@ public class BlogServiceImpl implements BlogService {
         return this.blogRepository.findAll();
     }
 
-//    @Override
-//    public Page<Blog> findAll() {
-//        return this.blogRepository.("a");
-////        return this.blogService.findAllByNameContainingOrderByIdDesc("a");
-////        return this.blogRepository.findAll();
-//    }
 
     @Override
     public Blog findById(Integer id) {

@@ -32,7 +32,7 @@ public class BlogController {
     }
 
     @PostMapping("/create")
-    public String saveBlog(@Validated  @ModelAttribute Blog blog, BindingResult bindingResult) {
+    public String saveBlog(@Validated  @ModelAttribute Blog blog , BindingResult bindingResult) {
         if(bindingResult.hasErrors())
         {
             return"blog/create_blog";
