@@ -46,7 +46,6 @@ public class BooksServiceImpl implements BooksService {
             this.bookLoanNumberRepository.save(bookLoanNumber);
             return String.valueOf(bookLoanNumber.getLoanNumber());
         }
-
     }
 
     @Override
